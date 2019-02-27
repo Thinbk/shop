@@ -18,3 +18,20 @@ Route::get('/', function () {
 Route::get('/home', function (){
     return view('pages.home');
 });
+
+Route::get('/login', function (){
+    return view('layouts.login');
+});
+
+Route::get('/product-detail', function (){
+    return view('layouts.product-detail');
+});
+
+Route::get('/cart', function (){
+    return view('layouts.cart');
+});
+
+Route::get('/checkout', function (){
+    return view('layouts.checkout');
+});
+
