@@ -35,3 +35,16 @@ Route::get('/checkout', function (){
     return view('layouts.checkout');
 });
 
+Route::get('/404', function (){
+    return view('layouts.404');
+});
+
+// route admin
+Route::get('/admin/login', function (){
+    return view('admin.login');
+});
+
+Route::get('/admin/user', 'UserController@list');
+Route::get('/admin/user/delete/{$id}', 'UserController@delete');
+
+Route::get('/admin/product', 'ProductController@list');
